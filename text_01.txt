@@ -1,0 +1,21 @@
+Algorithm 1: Classical Genetic Algorithm (GA)
+
+Input:
+	Population Size, n
+	Maximum number of iterations, MAX
+Output:
+	Global best solution, Y
+
+begin
+	Generate initial population of n chromosomes Y, (i=1,2,....)
+	Set iteration counter t = 0
+	Compute the fitness value of each chromosomes
+	while (t<MAX)
+		Select a pair of chromosomes from initial population based on fitness
+		Apply crossover operation on selected pair with crossover probability
+		Apply mutation on the offspring with mutation probability
+		Replace old population with newly generated population
+		Increment the current iteration t by 1.
+	end while
+	return the best solution, Y
+end
